@@ -5,7 +5,7 @@
 2. [Architecture](#architecture)
 3. [Project Setup](#project-setup)
 4. [Configuration](#configuration)
-5. [Run the w3badge App](#run-w3badge-app)
+5. [Build and Run the w3badge App](#build-run)
 6. [Screenshots](#screenshots)
 6. [Resources](#resources)
 
@@ -23,33 +23,8 @@ To run this project locally, follow these steps.
 1. Clone the project locally, change into the directory, and install the dependencies:
 
 ```sh
-git clone https://github.com/lorcie/w3badge.git
-
-
-== Unity Editor
-
-First Installation : Follow instructions at this Thirdweb link https://blog.thirdweb.com/guides/get-started-with-thirdwebs-unity-sdk/
-
-	- Install Thirdweb Unity SDK if needed by downloading and importing the Unity package and configure as webGL,...
-	
-	- Change Smart Contract Address parameter value (if new value) in Script SDKManager.cs
-
-Open Unity Editor, select "Start Scene" and click "Build and Run"
-
-You can now play the Unity game by clicking keyboard (Left, Right, Up, Down and Space to Jump) Inputs
-
-== Admin Web APP
-
-cd w3badge-contract
-
-# install using NPM or Yarn
-npm install
-
-# or
-
-yarn
+git clone https://github.com/lorcie/w3badge-app.git
 ```
-
 ## Configuration <a name="configuration"></a>
 
 copy the `.env.sample` folder:
@@ -65,30 +40,7 @@ NEXT_PUBLIC_CONTRACT_ADDRESS=
 NEXT_PUBLIC_WALLET_ADDRESS=
 
 ```
-
-### Contract Deployment on Local Environment
-
-0. Prerequites
-
-LOCAL TOOLS :  Remix, Metamask,  Node JS, Unity
-
-LOCAL DEVELOPMENT
-
-- Install Node JS to enable to install react and libraries
-
-The development of the **Solidity** Smart Contract is facilitated with **Truffle** and **web3** javascript sdk
-
-1. Start Ganache Tool
-
-```sh
-launch Ganachache Tool from windows app list
-```
-
-2. With the network running, deploy the contracts to the local network in a separate terminal window. You muat run with argument reset  to reinitialize the cache
-
-```sh
-truffle migrate --network development
-```
+## Build and Run <a name="build-run"></a>
 
 ### Contract Deployment on Thirdweb Portal with Polygon Mumbai Test Environment
 
@@ -99,36 +51,42 @@ truffle migrate --network development
 - Add this Smart Contract Address in your Application Code for Unity and Configuration Env File for NextJS Admin Frontend App.
 
 
-1. ReCompile and Deploy from Scrtach the contract by configuring the  to the polygon matic network
+1. ReCompile and Deploy from Scratch the contract by configuring the  to the polygon matic network
 
 ```sh
-npx deploy
+npx thirdweb deploy
 ```
 
-```
 
-## Run the W3Badge Polygon App <a name="run-w3badge-app"></a>
+### Unity Edition and Engine
 
-In main directory w3exchange folder
+First Installation : Follow instructions at this Thirdweb link https://blog.thirdweb.com/guides/get-started-with-thirdwebs-unity-sdk/
 
-### Development Mode <a name="development-mode"></a>
+	- Install Thirdweb Unity SDK if needed by downloading and importing the Unity package and configure as webGL,...
+	
+	- Change Smart Contract Address parameter value (if new value) in Script SDKManager.cs
+
+Open Unity Editor, select "Start Scene" and click "Build and Run"
+
+You can now play the Unity game by clicking keyboard (Left, Right, Up, Down and Space to Jump) Inputs
+
+### Admin Frontend APP
+
+In main directory w3badge-admin folder
 
 - Run the development Application:
 
 ```bash
-npm run start
+npm run dev
 ```
 You can then Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-### Production Mode <a name="production-mode"></a>
-
-- You must first Build the Application
-
-```bash
-npm run build
-```
-
 ## Screenshots <a name="screenshots"></a>
+
+W3Badge App Modules>
+
+![w3badge App Modules ](./screenshots/w3badge-app-modules-visual-studio-code.png)
+
 Unity Game>
 
 ![w3badge Unity Game](./screenshots/ComboUnityWeb3-Unity-Thirdweb.png)
