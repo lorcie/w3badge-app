@@ -12,6 +12,23 @@
 ## Introduction <a name="introduction"></a>
 W3BadgeContract is a Web3 application to showcase integration of custom Badge SmartContract on **Thirdweb** Portal SDK **Unity** game with **NFT** storage **IPFS** API  on **Polygon** Blockchain Environment thru **Metamask** wallet.
 
+## Game Logic
+
+- The Player has to move a Ball to hit a Target by Typing Keyboard (Left, Right, Up, Down and Space to Jump) Inputs Clicks and gets one point each time the Target is hit.
+
+- Badge Level 1 is granted to the Player if (s)he reaches 3 points
+
+- Badge Level 2 is granted to the Player if (s)he reaches 10 points
+...
+
+Smart Contract Integration :
+
+- At the Beginning of the game session, the Player has to identify with his/her Metamask Wallet.
+
+- On each win (Target hit) action, the Player can decide either to end the session, either to RePlay, either to Synchronize (Store) Data with the Smart Contract.
+
+- Badges represent NFT Player rewards associated to the Smart Contract
+
 ## Architecture <a name="architecture"></a>
 
 ![w3badge architecture](./screenshots/w3badge-architecture.png)
