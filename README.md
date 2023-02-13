@@ -136,6 +136,8 @@ Metamask Wallet Confirmed>
 
 ## Resources <a name="resources"></a>
 
-[ipfs nfs storage](https://nft.storage/files/)[https://nft.storage/files/]
+[w3badge unity game on IPFS](https://gateway.ipfscdn.io/ipfs/QmTeBNn61y5bFTrfzWMwGimmcfK1tMMfrxqCAbAEWVLQak/)[https://gateway.ipfscdn.io/ipfs/QmTeBNn61y5bFTrfzWMwGimmcfK1tMMfrxqCAbAEWVLQak/]
+
+[w3badge Thirdweb dashboard](https://thirdweb.com/mumbai/0x43cf296bB881a673BABdCC4A9991BD681714d1Cf)[https://thirdweb.com/mumbai/0x43cf296bB881a673BABdCC4A9991BD681714d1Cf]
 
 [polygon smart contracts / accounts](https://mumbai.polygonscan.com/) [https://mumbai.polygonscan.com/]
